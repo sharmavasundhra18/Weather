@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background flexX flexY">
+        <div class="template flexX flexY">
+            <a class="menu"  href="#" onclick="view()"> <i class="fa-solid fa-bars" width="250px"></i></a>
+            <div class="weather">
+                <div class="icon">
+                    <img id="icon" src="assets/error.png" width="80px">
+                    <p id="looks"> Sunny </p>
+                </div>
+                <div class="lower-section flexY">
+                    <div class="temp">
+                        <h1 id="temperature">--°C</h1>
+                    </div>
+                    <div class="place">
+                        <h2 id="city">-</h2>
+                        <span> <h3 id="country">-</h3> <p id="date">--</p></span>
+                    </div>
+                    <div class="info">
+                        <p id="precipitation">Precipitation</p>
+                        <p id="humidity">Humidity</p>
+                        <p id="wind">Wind</p>
+                        <p id="feels">Feels-like</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar" id="sidebar">
+                <div class="search-panel flexX">
+                    <input id="search-bar" class="search-bar" type="text" placeholder="Eg. Delhi">
+                    <button id="search-btn" class="search-btn">
+                        <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="cards" id="cards">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="backdrop flexX">   
+            <img src="assets/clouds.webp" alt="">
+            <img src="assets/clouds.webp" alt="">            
+        </div>
+
+    </div>
+
+    <template id="template-card">
+        <div class="card-con flexY" id="card">
+            <div  class="card-icon">
+                <img id="card-icon" src="https://via.placeholder.com/45" width="45px">
+            </div>
+            <div id="card-day" class="card-day">Tomorrow</div>
+            <div id="card-maxtemp" class="card-temp">32</div>
+            <div id="card-mintemp" class="card-temp">32</div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------- UTILITIES ----------- */
+
+:root{  /*variables */
+    --primary-color:rgb(100, 203, 255);
+    --secondary-color:rgb(185, 221, 229);
+    --primary-text-color:rgb(0, 0, 0);
+    --filter-value: 0;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5vw;
+    color: var(--primary-text-color);
+    user-select: none;   /*to disable selection */
+}
+h1{
+    font-size: 6vw;
+    font-weight: 600;
+}
+h2{
+    font-size: 3vw;
+}
+h3{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.flexX{
+    display: flex;
+    justify-content: center;
+}
+.flexY{
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+a:active{
+    color: rgb(60, 60, 60);
+}
+
+
+
+/* ---------- BACKGROUND ----------*/
+
+.background{
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(var(--primary-color),var(--secondary-color));
+    transition:1s ease;
+}
+.backdrop{   /*cloud animation in background */
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    animation: slide 100s linear infinite both;
+    transition: 1s ease-in;
+    filter: invert(var(--filter-value));
+} 
+@keyframes slide {
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(50vw,0);
+    }
+} 
+
+
+
+    
+/* ---------MAIN---------- */
+
+.menu{
+    display:none;
+}
+.template{
+    z-index: 88;
+    height: 400px;
+    width: 900px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px) opacity(89%);
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.773);
+}
+
+
+
+
+/* -------- LEFT PANEL-------- */
+
+.icon{
+    padding: 40px;
+}
+.weather{
+    height: 100%;
+    width: 70%;
+}
+.lower-section{
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    padding: 30px;
+    justify-content: space-around;
+    text-align: center; 
+}
+.info{
+    text-align: left !important;
+}
+.active{
+    display:block !important;
+}
+
+
+/* -------- RIGHT PANEL-------- */
+
+.sidebar{
+    height: 100%;
+    width: 30%;
+    background-color: var(--secondary-color);
+    backdrop-filter: opacity(80%);
+    border-radius: 15px;
+}
+.search-panel{
+    justify-content: space-between;
+    padding: 10px;
+    width:100%;
+}
+.search-bar{
+    padding:5px 3px;
+    font-size: 1.4vw;
+    border-radius: 5px;
+    border: none;
+}
+.search-btn{
+    background-color: rgb(104, 164, 244);
+    width: 30px;
+    border-radius: 5px;
+    border: none;
+}
+.search-btn:hover{
+    cursor: pointer;
+    background-color: rgb(81, 146, 231);
+    box-shadow: 0 0 3px cadetblue;
+}
+.search-btn:active{
+    background-color: rgb(34, 60, 230);
+    box-shadow: 0 0 3px cadetblue;
+}
+#search-icon{
+    color:var(--primary-text-color);
+}
+.card-con{
+    padding: 5px 10px;
+    justify-content: space-between;
+}
+
+
+
+
+/* --------MEDIA QUERY-------- */
+
+@media screen and (width>=1200px) {
+    .template{
+        height: 80%;
+        width: 80%;
+    }
+}
+
+@media screen and (600px>=width), (orientation: portrait){
+    .menu{
+        z-index: 88;
+        display:flex;
+        position: fixed;
+        top:10px;
+        left:15px;
+        color: var(--primary-text-color);
+        font-size:5vw !important;      
+    }
+    .template{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-size: 3.1vw !important;
+    }
+    .weather{
+        height: 100%;
+        width: 100%;
+    }
+    .sidebar{
+        top:20px;
+        display:none;
+        position: fixed;
+        text-align: center;
+        width: 80%;
+        height: fit-content;
+    }
+    #time{
+        display: none;
+    }
+    .lower-section{
+        flex-direction: column;
+        gap:10px;
+        width: 100vw;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .info{
+        padding: 20px;
+    }
+    .search-bar{
+        font-size: 3.5vw;
+    }
+}
