@@ -1,7 +1,7 @@
 
 <br/>
 <p align="center">
-  <h1 align="center">***Weather Website***</h1>
+  <h1 align="center"> **Weather Website** </h1>
   <p align="center">
     A simple and responsive weather website along with weather forecast. 
     <br/>
@@ -26,10 +26,10 @@
 </p>
 
 <p align="center">
-<img src="assets/mobile-main-light.jpg" height="500">
-<img src="assets/mobile-search-light.jpg" height="500">
-<img src="assets/mobile-main-dark.jpg" height="500">
-<img src="assets/mobile-search-dark.jpg" height="500">  
+<img src="assets/mobile-main-light.jpg" height="400">
+<img src="assets/mobile-search-light.jpg" height="400">
+<img src="assets/mobile-main-dark.jpg" height="400">
+<img src="assets/mobile-search-dark.jpg" height="400">  
 </p>
 
 Weather website is a simple and efficient website made with the help of [WeatherAPI](https://www.weatherapi.com) . 
@@ -73,9 +73,11 @@ Signup to create an account and get your unique API key.
 
 Replace the following with your API key in script.js.
 
-**{const APIkey = "Your_API_key"}**
 
-!!!
+
+      • const APIkey = "Your_API_key"
+
+
 <br/>
 
 ## Authors
@@ -84,6 +86,6 @@ Replace the following with your API key in script.js.
 
 <br/>
 <h3 align="center">
-Thank you !
+Thank you ❤️
 </h3>
 
