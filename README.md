@@ -1,7 +1,7 @@
 
 <br/>
 <p align="center">
-  <h1 align="center">Weather Website</h1>
+  <h1 align="center">***Weather Website***</h1>
   <p align="center">
     A simple and responsive weather website along with weather forecast. 
     <br/>
@@ -40,7 +40,6 @@ Key Features:
 
 -   Changes theme according to day and night.
 -   Can search various locations using a range of queries.
---
 
             • City Name
             • Latitudes and Longitudes
@@ -73,6 +72,7 @@ Go to [WeatherAPI](https://www.weatherapi.com) to get started.
 Signup to create an account and get your unique API key.
 
 Replace the following with your API key in script.js.
+
 **{const APIkey = "Your_API_key"}**
 
 !!!
