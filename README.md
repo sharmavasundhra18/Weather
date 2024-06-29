@@ -1,7 +1,7 @@
 
 <br/>
 <p align="center">
-  <h1 align="center"> **Weather Website** </h1>
+  <h1 align="center"> ✨ Weather Website ✨  </h1>
   <p align="center">
     A simple and responsive weather website along with weather forecast. 
     <br/>
@@ -75,7 +75,7 @@ Replace the following with your API key in script.js.
 
 
 
-      • const APIkey = "Your_API_key"
+      const APIkey = "Your_API_key"
 
 
 <br/>
