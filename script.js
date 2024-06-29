@@ -1,4 +1,4 @@
-const APIkey="025b37ba086d483c8c1113607242106";  //Enter your API key here
+const APIkey="Your_API_Key";  //Enter your API key here
 const url="http://api.weatherapi.com/v1/";
 
 window.addEventListener("load",() => fetchData("india")); //to fetch data on load
