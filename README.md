@@ -1,8 +1,4 @@
 
-![image](https://github.com/sharmavasundhra18/Weather/assets/88420536/7e05c1d0-e412-4716-9abe-666f3865a41e)
-
-![image](https://github.com/sharmavasundhra18/Weather/assets/88420536/37a5bc6c-2aa0-44f0-9027-9f8e56dfc672)
-
 <br/>
 <p align="center">
   <h1 align="center">Weather Website</h1>
@@ -13,6 +9,7 @@
     <br/>
   </p>
 </p>
+
 ## Table Of Contents
 
 -   [About the Project](#about-the-project)
@@ -22,13 +19,12 @@
 
 ## About The Project
 <p align="center">
-<img src="(https://github.com/sharmavasundhra18/Weather/assets/88420536/7e05c1d0-e412-4716-9abe-666f3865a41e" width="300">
-<img src="((https://github.com/sharmavasundhra18/Weather/assets/88420536/37a5bc6c-2aa0-44f0-9027-9f8e56dfc672)" width="300">
+<img src="https://github.com/sharmavasundhra18/Weather/assets/88420536/7e05c1d0-e412-4716-9abe-666f3865a41e" width="300">
+<img src="https://github.com/sharmavasundhra18/Weather/assets/88420536/37a5bc6c-2aa0-44f0-9027-9f8e56dfc672" width="300">
   
 </p>
-
-<img src="(https://github.com/sharmavasundhra18/Weather/assets/88420536/7e05c1d0-e412-4716-9abe-666f3865a41e" width="300">
-Weather website is a simple and efficient website made with the help of [WeatherAPI](https://www.weatherapi.com/). As a responsive website it is functional on various sorts of media devices. 
+Weather website is a simple and efficient website made with the help of [WeatherAPI](https://www.weatherapi.com/). 
+As a responsive website it is functional on various sorts of media devices. 
 
 Key Features:
 
